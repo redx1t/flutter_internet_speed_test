@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_internet_speed_test/src/models/server_selection_response.dart';
-import 'package:flutter_internet_speed_test/src/speed_test_utils.dart';
+import 'package:flutter_internet_speed_test_pro/src/models/server_selection_response.dart';
+import 'package:flutter_internet_speed_test_pro/src/speed_test_utils.dart';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
 import 'package:tuple_dart/tuple.dart';
@@ -14,7 +14,7 @@ import 'flutter_internet_speed_test_platform_interface.dart';
 class MethodChannelFlutterInternetSpeedTest
     extends FlutterInternetSpeedTestPlatform {
   /// The method channel used to interact with the native platform.
-  final _channel = const MethodChannel('com.shaz.plugin.fist/method');
+  final _channel = const MethodChannel('com.redx1t.plugin.fist/method');
   final _logger = Logger();
 
   Future<void> _methodCallHandler(MethodCall call) async {

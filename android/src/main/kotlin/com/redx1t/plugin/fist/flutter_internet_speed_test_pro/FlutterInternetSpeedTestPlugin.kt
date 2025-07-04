@@ -1,4 +1,4 @@
-package com.shaz.plugin.fist.flutter_internet_speed_test
+package com.redx1t.plugin.fist.flutter_internet_speed_test_pro
 
 import android.app.Activity
 import android.content.Context
@@ -35,7 +35,7 @@ class FlutterInternetSpeedTestPlugin : FlutterPlugin, MethodCallHandler, Activit
     override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         applicationContext = flutterPluginBinding.applicationContext
         methodChannel =
-            MethodChannel(flutterPluginBinding.binaryMessenger, "com.shaz.plugin.fist/method")
+            MethodChannel(flutterPluginBinding.binaryMessenger, "com.redx1t.plugin.fist/method")
         methodChannel.setMethodCallHandler(this)
     }
 

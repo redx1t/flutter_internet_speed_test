@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_internet_speed_test/src/models/server_selection_response.dart';
+import 'package:flutter_internet_speed_test_pro/src/models/server_selection_response.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:tuple_dart/tuple.dart';
 

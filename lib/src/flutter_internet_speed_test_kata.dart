@@ -1,5 +1,6 @@
-// import 'package:flutter_internet_speed_test/src/speed_test_utils.dart';
-// import 'package:flutter_internet_speed_test/src/test_result.dart';
+// import 'package:flutter_internet_speed_test_pro/src/speed_test_utils.dart';
+// import 'package:flutter_internet_speed_test_pro/src/test_result.dart';
+// import 'package:tuple_dart/tuple.dart';
 //
 // import 'callbacks_enum.dart';
 // import 'flutter_internet_speed_test_platform_interface.dart';

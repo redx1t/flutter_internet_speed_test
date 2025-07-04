@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   //MethodChannelFlutterInternetSpeedTest platform = MethodChannelFlutterInternetSpeedTest();
-  const MethodChannel channel = MethodChannel('flutter_internet_speed_test');
+  const MethodChannel channel = MethodChannel('flutter_internet_speed_test_pro');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 

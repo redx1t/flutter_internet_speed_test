@@ -1,14 +1,19 @@
+A cloned version of the original flutter_internet_speed_test package with support for AGP 8+. The previous version has not been maintained for awhile
+
+
 <div align="center">
 
-# Flutter Internet Speed Test
+# Flutter Internet Speed Test Pro
 
-[![Flutter](https://img.shields.io/badge/_Flutter_-Plugin-grey.svg?&logo=Flutter&logoColor=white&labelColor=blue)](https://pub.dev/packages/flutter_internet_speed_test)
-[![Pub Version](https://img.shields.io/pub/v/flutter_internet_speed_test?color=orange&label=version)](https://pub.dev/packages/flutter_internet_speed_test)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/shaz-tech/flutter_internet_speed_test?color=blueviolet)](https://pub.dev/packages/flutter_internet_speed_test)
-[![GitHub](https://img.shields.io/github/license/shaz-tech/flutter_internet_speed_test)](https://pub.dev/packages/flutter_internet_speed_test)
+[![Flutter](https://img.shields.io/badge/_Flutter_-Plugin-grey.svg?&logo=Flutter&logoColor=white&labelColor=blue)](https://pub.dev/packages/flutter_internet_speed_test_pro)
+[![Pub Version](https://img.shields.io/pub/v/flutter_internet_speed_test_pro?color=orange&label=version)](https://pub.dev/packages/flutter_internet_speed_test_pro)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/redx1t/flutter_internet_speed_test_pro?color=blueviolet)](https://pub.dev/packages/flutter_internet_speed_test_pro)
+[![GitHub](https://img.shields.io/github/license/redx1t/flutter_internet_speed_test_pro)](https://pub.dev/packages/flutter_internet_speed_test_pro)
  
 </div>
 A Flutter plugin to test internet download and upload speed.
+
+**This is a fork of the original [flutter_internet_speed_test](https://pub.dev/packages/flutter_internet_speed_test) package with support for Android Gradle Plugin (AGP) 8+ and other modern Flutter requirements.**
 
 #### Servers used:
 
@@ -22,7 +27,7 @@ A Flutter plugin to test internet download and upload speed.
 
 ```yaml
 dependencies:
-  flutter_internet_speed_test: ^lastest_version
+  flutter_internet_speed_test_pro: ^lastest_version
 ```
 
 ### Screenshots
@@ -33,7 +38,7 @@ dependencies:
 
 ```dart
 
-    import 'package:flutter_internet_speed_test/flutter_internet_speed_test.dart';
+    import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test.dart';
     
     final speedTest = FlutterInternetSpeedTest();
     speedTest.startTesting(
@@ -77,7 +82,7 @@ You can also configure your test server URL
 
 ```dart
 
-  import 'package:flutter_internet_speed_test/flutter_internet_speed_test.dart';
+  import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test.dart';
 
   final speedTest = FlutterInternetSpeedTest();
   speedTest.startTesting(

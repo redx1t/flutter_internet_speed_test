@@ -1,3 +1,14 @@
+# Changelog
+
+## 1.5.0 (Fork Version)
+
+* **Fork Information**: This is a fork of the original flutter_internet_speed_test package with support for Android Gradle Plugin (AGP) 8+ and modern Flutter requirements
+* Updated dependencies for compatibility with newer Flutter versions
+* Bug fixes: https://github.com/redx1t/flutter_internet_speed_test_pro/issues/3
+* Code refactor and modernization
+
+## Original Package History
+
 ## 0.0.1
 
 * TODO: Describe initial release.

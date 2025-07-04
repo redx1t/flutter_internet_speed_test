@@ -1,4 +1,4 @@
-library flutter_internet_speed_test;
+library flutter_internet_speed_test_pro;
 
 export './src/callbacks_enum.dart';
 export './src/flutter_internet_speed_test.dart'
