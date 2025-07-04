@@ -38,7 +38,7 @@ dependencies:
 
 ```dart
 
-    import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test.dart';
+    import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test_pro.dart';
     
     final speedTest = FlutterInternetSpeedTest();
     speedTest.startTesting(
@@ -82,7 +82,7 @@ You can also configure your test server URL
 
 ```dart
 
-  import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test.dart';
+  import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test_pro.dart';
 
   final speedTest = FlutterInternetSpeedTest();
   speedTest.startTesting(
