@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.5.1
+
+* **Dependency Updates**: Updated all dependencies to latest versions
+  * `connectivity_plus`: 5.0.2 → 6.1.4 (with API compatibility fixes)
+  * `flutter_lints`: 3.0.1 → 6.0.0
+  * Updated transitive dependencies for better compatibility
+* **Static Analysis**: Fixed all static analysis issues
+  * Removed unnecessary imports in example app
+  * Updated deprecated method call handlers in tests
+  * Fixed super parameter usage
+  * Resolved formatting issues
+* **Documentation**: Significantly improved API documentation coverage
+  * Added comprehensive dartdoc comments to all public API classes
+  * Documented all enums, typedefs, and methods
+  * Added detailed parameter descriptions and return value documentation
+  * Improved library-level documentation
+* **Code Quality**: Enhanced overall code quality and maintainability
+
 ## 1.5.0 (Fork Version)
 
 * **Fork Information**: This is a fork of the original flutter_internet_speed_test package with support for Android Gradle Plugin (AGP) 8+ and modern Flutter requirements
