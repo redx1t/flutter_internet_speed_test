@@ -4,7 +4,7 @@
 class ServerSelectionResponse {
   /// Information about the client making the request.
   late final Client? client;
-  
+
   /// List of available test targets/servers.
   late final List<Targets>? targets;
 
@@ -41,13 +41,13 @@ class ServerSelectionResponse {
 class Client {
   /// The client's IP address.
   late final String? ip;
-  
+
   /// The Autonomous System Number (ASN).
   late final String? asn;
-  
+
   /// The Internet Service Provider (ISP) name.
   late final String? isp;
-  
+
   /// The client's geographical location.
   late final Location? location;
 
@@ -80,7 +80,7 @@ class Client {
 class Location {
   /// The city name.
   late final String? city;
-  
+
   /// The country name.
   late final String? country;
 
@@ -108,10 +108,10 @@ class Location {
 class Targets {
   /// The name of the target server.
   late final String? name;
-  
+
   /// The URL endpoint for the target server.
   late final String? url;
-  
+
   /// The geographical location of the target server.
   late final Location? location;
 

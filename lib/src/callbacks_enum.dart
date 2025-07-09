@@ -2,7 +2,7 @@
 enum TestType {
   /// Download speed test.
   download,
-  
+
   /// Upload speed test.
   upload,
 }
@@ -11,7 +11,7 @@ enum TestType {
 enum CallbacksEnum {
   /// Start download testing callback.
   startDownLoadTesting,
-  
+
   /// Start upload testing callback.
   startUploadTesting,
 }
@@ -20,13 +20,13 @@ enum CallbacksEnum {
 enum ListenerEnum {
   /// Test completed successfully.
   complete,
-  
+
   /// Test encountered an error.
   error,
-  
+
   /// Test progress update.
   progress,
-  
+
   /// Test was cancelled.
   cancel,
 }
@@ -35,7 +35,7 @@ enum ListenerEnum {
 enum SpeedUnit {
   /// Kilobits per second.
   kbps,
-  
+
   /// Megabits per second.
   mbps,
 }

@@ -7,13 +7,13 @@ import 'package:flutter_internet_speed_test_pro/src/callbacks_enum.dart';
 class TestResult {
   /// The type of test that was performed (download or upload).
   final TestType type;
-  
+
   /// The transfer rate achieved during the test.
   final double transferRate;
-  
+
   /// The unit of measurement for the transfer rate (Kbps or Mbps).
   final SpeedUnit unit;
-  
+
   /// The duration in milliseconds it took to complete the test.
   final int durationInMillis;
 

@@ -48,16 +48,16 @@ abstract class FlutterInternetSpeedTestPlatform extends PlatformInterface {
   Map<int,
           Tuple4<ErrorCallback, ProgressCallback, DoneCallback, CancelCallback>>
       callbacksById = {};
-  
+
   /// Current download rate in bytes per second.
   int downloadRate = 0;
-  
+
   /// Current upload rate in bytes per second.
   int uploadRate = 0;
-  
+
   /// Number of download test steps completed.
   int downloadSteps = 0;
-  
+
   /// Number of upload test steps completed.
   int uploadSteps = 0;
 

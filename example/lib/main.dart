@@ -1,14 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_internet_speed_test_pro/flutter_internet_speed_test_pro.dart';
-import 'package:flutter_internet_speed_test_pro/src/callbacks_enum.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -196,20 +195,18 @@ class _MyAppState extends State<MyApp> {
 
   void reset() {
     setState(() {
-      {
-        _testInProgress = false;
-        _downloadRate = 0;
-        _uploadRate = 0;
-        _downloadProgress = '0';
-        _uploadProgress = '0';
-        _unitText = 'Mbps';
-        _downloadCompletionTime = 0;
-        _uploadCompletionTime = 0;
+      _testInProgress = false;
+      _downloadRate = 0;
+      _uploadRate = 0;
+      _downloadProgress = '0';
+      _uploadProgress = '0';
+      _unitText = 'Mbps';
+      _downloadCompletionTime = 0;
+      _uploadCompletionTime = 0;
 
-        _ip = null;
-        _asn = null;
-        _isp = null;
-      }
+      _ip = null;
+      _asn = null;
+      _isp = null;
     });
   }
 }
