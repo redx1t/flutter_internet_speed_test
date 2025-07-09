@@ -177,6 +177,7 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+
   /// Starts a download speed test using the method channel.
   ///
   /// This method initiates a download test by setting up the method call handler
@@ -204,6 +205,7 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+
   /// Starts an upload speed test using the method channel.
   ///
   /// This method initiates an upload test by setting up the method call handler
@@ -231,6 +233,7 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+
   /// Toggles logging on or off for the method channel implementation.
   ///
   /// Parameters:
@@ -241,6 +244,7 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+
   /// Gets the default server for speed testing from Fast.com API.
   ///
   /// This method fetches server information from Fast.com's API to provide
@@ -276,6 +280,7 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+
   /// Cancels the currently running test using the method channel.
   ///
   /// This method invokes the native platform's cancel functionality to stop
