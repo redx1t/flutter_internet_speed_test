@@ -7,8 +7,7 @@ A cloned version of the original flutter_internet_speed_test package with suppor
 
 [![Flutter](https://img.shields.io/badge/_Flutter_-Plugin-grey.svg?&logo=Flutter&logoColor=white&labelColor=blue)](https://pub.dev/packages/flutter_internet_speed_test_pro)
 [![Pub Version](https://img.shields.io/pub/v/flutter_internet_speed_test_pro?color=orange&label=version)](https://pub.dev/packages/flutter_internet_speed_test_pro)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/redx1t/flutter_internet_speed_test_pro?color=blueviolet)](https://pub.dev/packages/flutter_internet_speed_test_pro)
-[![GitHub](https://img.shields.io/github/license/redx1t/flutter_internet_speed_test_pro)](https://github.com/redx1t/flutter_internet_speed_test_pro)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 </div>
 A Flutter plugin to test internet download and upload speed.
