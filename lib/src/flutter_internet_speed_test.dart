@@ -5,12 +5,25 @@ import 'callbacks_enum.dart';
 import 'flutter_internet_speed_test_platform_interface.dart';
 import 'models/server_selection_response.dart';
 
+/// Callback function type for default operations.
 typedef DefaultCallback = void Function();
+
+/// Callback function type for test completion with download and upload results.
 typedef ResultCallback = void Function(TestResult download, TestResult upload);
+
+/// Callback function type for test progress updates.
 typedef TestProgressCallback = void Function(double percent, TestResult data);
+
+/// Callback function type for individual test completion.
 typedef ResultCompletionCallback = void Function(TestResult data);
+
+/// Callback function type for server selection completion.
 typedef DefaultServerSelectionCallback = void Function(Client? client);
 
+/// A singleton class that provides internet speed testing functionality.
+///
+/// This class manages both download and upload speed tests, providing
+/// real-time progress updates and completion callbacks.
 class FlutterInternetSpeedTest {
   static const _defaultDownloadTestServer =
       'http://speedtest.ftp.otenet.gr/files/test10Mb.db';
@@ -23,12 +36,35 @@ class FlutterInternetSpeedTest {
   bool _isTestInProgress = false;
   bool _isCancelled = false;
 
+  /// Factory constructor that returns the singleton instance.
   factory FlutterInternetSpeedTest() => _instance;
 
   FlutterInternetSpeedTest._private();
 
+  /// Checks if a speed test is currently in progress.
+  ///
+  /// Returns `true` if a test is running, `false` otherwise.
   bool isTestInProgress() => _isTestInProgress;
 
+  /// Starts the internet speed testing process.
+  ///
+  /// This method performs both download and upload speed tests sequentially.
+  /// The test will automatically select servers if not provided and useFastApi is true.
+  ///
+  /// Parameters:
+  /// - [onCompleted]: Required callback when both tests complete
+  /// - [onStarted]: Optional callback when testing begins
+  /// - [onDownloadComplete]: Optional callback when download test completes
+  /// - [onUploadComplete]: Optional callback when upload test completes
+  /// - [onProgress]: Optional callback for progress updates
+  /// - [onDefaultServerSelectionInProgress]: Optional callback during server selection
+  /// - [onDefaultServerSelectionDone]: Optional callback when server selection completes
+  /// - [onError]: Optional callback for error handling
+  /// - [onCancel]: Optional callback when test is cancelled
+  /// - [downloadTestServer]: Optional custom download server URL
+  /// - [uploadTestServer]: Optional custom upload server URL
+  /// - [fileSizeInBytes]: File size for testing (default: 10MB)
+  /// - [useFastApi]: Whether to use Fast.com API for server selection (default: true)
   Future<void> startTesting({
     required ResultCallback onCompleted,
     DefaultCallback? onStarted,
@@ -159,18 +195,32 @@ class FlutterInternetSpeedTest {
     );
   }
 
+  /// Enables logging for debugging purposes.
+  ///
+  /// When enabled, detailed logs will be printed to the console
+  /// showing the progress and results of speed tests.
   void enableLog() {
     FlutterInternetSpeedTestPlatform.instance.toggleLog(value: true);
   }
 
+  /// Disables logging.
+  ///
+  /// When disabled, no debug logs will be printed to the console.
   void disableLog() {
     FlutterInternetSpeedTestPlatform.instance.toggleLog(value: false);
   }
 
+  /// Cancels the currently running speed test.
+  ///
+  /// Returns a [Future<bool>] that completes with `true` if the test
+  /// was successfully cancelled, `false` otherwise.
   Future<bool> cancelTest() async {
     _isCancelled = true;
     return await FlutterInternetSpeedTestPlatform.instance.cancelTest();
   }
 
+  /// Gets whether logging is currently enabled.
+  ///
+  /// Returns `true` if logging is enabled, `false` otherwise.
   bool get isLogEnabled => FlutterInternetSpeedTestPlatform.instance.logEnabled;
 }
