@@ -177,6 +177,20 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+  /// Starts a download speed test using the method channel.
+  ///
+  /// This method initiates a download test by setting up the method call handler
+  /// and invoking the native platform's download testing functionality.
+  ///
+  /// Parameters:
+  /// - [onDone]: Callback when download test completes
+  /// - [onProgress]: Callback for progress updates
+  /// - [onError]: Callback for error handling
+  /// - [onCancel]: Callback when test is cancelled
+  /// - [fileSize]: Size of file to download for testing
+  /// - [testServer]: URL of the test server
+  ///
+  /// Returns a [Future<CancelListening>] that provides a function to cancel the test.
   Future<CancelListening> startDownloadTesting(
       {required DoneCallback onDone,
       required ProgressCallback onProgress,
@@ -190,6 +204,20 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+  /// Starts an upload speed test using the method channel.
+  ///
+  /// This method initiates an upload test by setting up the method call handler
+  /// and invoking the native platform's upload testing functionality.
+  ///
+  /// Parameters:
+  /// - [onDone]: Callback when upload test completes
+  /// - [onProgress]: Callback for progress updates
+  /// - [onError]: Callback for error handling
+  /// - [onCancel]: Callback when test is cancelled
+  /// - [fileSize]: Size of file to upload for testing
+  /// - [testServer]: URL of the test server
+  ///
+  /// Returns a [Future<CancelListening>] that provides a function to cancel the test.
   Future<CancelListening> startUploadTesting(
       {required DoneCallback onDone,
       required ProgressCallback onProgress,
@@ -203,12 +231,23 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+  /// Toggles logging on or off for the method channel implementation.
+  ///
+  /// Parameters:
+  /// - [value]: Whether to enable or disable logging
   Future<void> toggleLog({required bool value}) async {
     logEnabled = value;
     await _toggleLog(logEnabled);
   }
 
   @override
+  /// Gets the default server for speed testing from Fast.com API.
+  ///
+  /// This method fetches server information from Fast.com's API to provide
+  /// optimal test servers for speed testing.
+  ///
+  /// Returns a [Future<ServerSelectionResponse?>] containing server information,
+  /// or `null` if the request fails or no servers are available.
   Future<ServerSelectionResponse?> getDefaultServer() async {
     try {
       if (await isInternetAvailable()) {
@@ -237,6 +276,13 @@ class MethodChannelFlutterInternetSpeedTest
   }
 
   @override
+  /// Cancels the currently running test using the method channel.
+  ///
+  /// This method invokes the native platform's cancel functionality to stop
+  /// any ongoing download or upload tests.
+  ///
+  /// Returns a [Future<bool>] that completes with `true` if the test
+  /// was successfully cancelled, `false` otherwise.
   Future<bool> cancelTest() async {
     var result = false;
     try {
